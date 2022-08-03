@@ -49,7 +49,7 @@ export default function HomeCard(props) {
         left="20px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children={`${"Price: $"}${home?.price}${"/night"}`}
+        children={`${"Price: $"}${home?.price}`}
         {...getOverrideProps(overrides, "Price")}
       ></Text>
       <Text
@@ -69,7 +69,7 @@ export default function HomeCard(props) {
         left="21px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children={home?.address}
+        children={`${"Address: "}${home?.address}`}
         {...getOverrideProps(overrides, "Address")}
       ></Text>
     </View>

@@ -9,7 +9,7 @@ import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function TallCard(props) {
-  const { home, overrides, ...rest } = props;
+  const { overrides, ...rest } = props;
   return (
     <Flex
       gap="8px"
@@ -29,7 +29,6 @@ export default function TallCard(props) {
         objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
-        src={home?.image_url}
         {...getOverrideProps(overrides, "image")}
       ></Image>
       <Flex
@@ -59,7 +58,7 @@ export default function TallCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children={home?.address}
+          children="Classic Long Sleeve T-Shirt"
           {...getOverrideProps(overrides, "Classic Long Sleeve T-Shirt")}
         ></Text>
         <Text
@@ -78,7 +77,7 @@ export default function TallCard(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children={`${"Price: $"}${home?.price}${"/night"}`}
+          children="$99"
           {...getOverrideProps(overrides, "$99")}
         ></Text>
       </Flex>

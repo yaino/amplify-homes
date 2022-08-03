@@ -5,12 +5,9 @@
  **************************************************************************/
 
 import React from "react";
-import { Home } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type TallCardProps = React.PropsWithChildren<Partial<FlexProps> & {
-    home?: Home;
-} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
 export default function TallCard(props: TallCardProps): React.ReactElement;
